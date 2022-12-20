@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <unistd.h>
 int main() {
 
 int click;
@@ -10,6 +11,7 @@ printf ("Coloque ate qual numero voce deseja o fizzbuzz\n");
 scanf("%d", &click);
 
 for (i = 1; i <= click; i++){
+sleep (1);
 printf ("%d",i);
 if (i % 15 == 0){ printf (" - FizzBuzz\n");}
 
